@@ -12,7 +12,6 @@ function newElement() {
         var list = document.getElementById("checkList"); //
         list.insertBefore(li, list.childNodes[0]); // list di atas
     }
-    //document.getElementById("myInput").value = "";
 
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
@@ -24,9 +23,7 @@ function newElement() {
         close[i].onclick = function() {
             var div = this.parentElement;
             div.style.display = "none";
-
         }
-
     }
 }
 

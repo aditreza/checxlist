@@ -144,7 +144,7 @@ ul li.checked::before {
 
 .close:hover {
     padding: 25px;
-    background-color: #FC1E46;
+    background-color: white;
     opacity: 0.2;
-    color: white;
+    color: black;
 }
