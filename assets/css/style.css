@@ -1,0 +1,130 @@
+/*  reset */
+
+body {
+    margin: 0;
+    min-width: 250px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "caveat";
+    src: url(../fonts/Caveat-Regular.ttf)
+}
+
+.cont {
+    margin: auto;
+}
+
+
+/* style headerr */
+
+.header {
+    background: url(../img/banner2.jpg)no-repeat;
+    padding: 40px 40px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    opacity: 0.8;
+}
+
+.header1 {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.title {
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+
+.tagLine {
+    font-family: "caveat";
+    font-size: 25px;
+    margin-top: -20px
+}
+
+
+/* style inputan */
+
+input {
+    border: none;
+    width: 75%;
+    padding: 15px;
+    float: left;
+    font-size: 15px;
+}
+
+
+/* style tombol add */
+
+.addBtn {
+    padding: 15px;
+    width: 25%;
+    background: rgba(217, 217, 217, 0.8);
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+
+/* Style checklist */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 25px 18px 25px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    /*top: 10px;*/
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
