@@ -60,6 +60,7 @@ input {
     padding: 15px;
     float: left;
     font-size: 15px;
+    opacity: 0.9;
 }
 
 
@@ -127,4 +128,23 @@ ul li.checked::before {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
+}
+
+
+/* Style tombol close */
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 25px 25px 15px 0;
+    font-size: 20px;
+    color: #888;
+}
+
+.close:hover {
+    padding: 25px;
+    background-color: #FC1E46;
+    opacity: 0.2;
+    color: white;
 }
